@@ -1,0 +1,11 @@
+---
+# Deploys the PREBUILT bundle. No build step: the bundle already contains .next
+# and a pruned node_modules, so the server never needs npm install or enough
+# memory to run a Next build.
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home2/atlineco/public_html/v4
+    - /bin/cp -R . $DEPLOYPATH/
+    # Carries REVALIDATE_SECRET, is git-ignored, and must already be present.
+    - test -f $DEPLOYPATH/.env.production || echo "WARNING: $DEPLOYPATH/.env.production is missing"
+    - mkdir -p $DEPLOYPATH/tmp && touch $DEPLOYPATH/tmp/restart.txt

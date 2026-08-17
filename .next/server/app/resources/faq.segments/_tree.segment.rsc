@@ -1,0 +1,10 @@
+:HL["/_next/static/chunks/0qlsat~0juk7x.css","style"]
+:HL["/_next/static/chunks/17e._aybrlq7x.css","style"]
+:HL["/_next/static/media/47fe1b7cd6e6ed85-s.p.0~mcdl10zdfb3.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/81cef6a21128489e-s.p.0rb1wy2~c~egv.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/8e6fa89aa22d24ec-s.p.0uvzar8hswo3p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/a218039a3287bcfd-s.p.17-1enzs_j91b.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/cf514f5d0007dafa-s.p.0lok5zj4ubzox.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/e2334d715941921e-s.p.12skym0rqknxy.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/assets/img/logo.png","image"]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"resources","param":null,"prefetchHints":0,"slots":{"children":{"name":"faq","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"EVM62XleZljLt6Qy3IO_V"}

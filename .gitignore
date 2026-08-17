@@ -1,0 +1,11 @@
+# The revalidation secret lives in .env.production, so it stays out of the
+# repository and must exist on the server already.
+.env
+.env.*
+!.env.example
+
+tmp/*
+!tmp/.gitkeep
+
+*.log
+npm-debug.log*

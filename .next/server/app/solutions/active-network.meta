@@ -1,0 +1,16 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/solutions/layout,_N_T_/solutions/active-network/layout,_N_T_/solutions/active-network/page,_N_T_/solutions/active-network"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/solutions/active-network/__PAGE__",
+    "/solutions/active-network",
+    "/solutions",
+    "/_index",
+    "/_head"
+  ]
+}

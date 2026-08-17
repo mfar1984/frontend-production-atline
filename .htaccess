@@ -1,0 +1,36 @@
+# DO NOT REMOVE OR MODIFY. CLOUDLINUX PASSENGER CONFIGURATION BEGIN
+PassengerAppRoot "/home2/atlineco/public_html/v4"
+PassengerBaseURI "/"
+PassengerNodejs "/home2/atlineco/nodevenv/public_html/v4/24/bin/node"
+PassengerAppType node
+PassengerStartupFile server.js
+# DO NOT REMOVE OR MODIFY. CLOUDLINUX PASSENGER CONFIGURATION END
+
+# NOTES
+#
+# The home directory is /home2, not /home.
+#
+# The app root is INSIDE public_html, so Apache can see these files directly.
+# Passenger routes requests to Node, but if that ever falls back to Apache the
+# rules below stop the environment file and the server sources being served as
+# plain text.
+#
+# The PassengerNodejs path above is a guess at what cPanel will generate for an
+# app root of public_html/v4. When you create the Node.js app in cPanel it
+# rewrites this block — keep whatever path it writes rather than this one.
+
+<FilesMatch "^\.env">
+    Require all denied
+</FilesMatch>
+<FilesMatch "\.(ts|tsx|map)$">
+    Require all denied
+</FilesMatch>
+
+# runtime-config.js is edited on the server to repoint the API, so it must never
+# be cached long. Everything under /_next/static is content-hashed and safe to
+# cache forever.
+<IfModule mod_headers.c>
+    <Files "runtime-config.js">
+        Header set Cache-Control "no-cache, must-revalidate"
+    </Files>
+</IfModule>

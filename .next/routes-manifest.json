@@ -1,0 +1,267 @@
+{
+  "version": 3,
+  "pages404": true,
+  "appType": "app",
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "priority": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    }
+  ],
+  "headers": [],
+  "onMatchHeaders": [],
+  "rewrites": {
+    "beforeFiles": [],
+    "afterFiles": [],
+    "fallback": []
+  },
+  "dynamicRoutes": [],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/_global-error",
+      "regex": "^/_global\\-error(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_global\\-error(?:/)?$"
+    },
+    {
+      "page": "/_not-found",
+      "regex": "^/_not\\-found(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/about/about-us",
+      "regex": "^/about/about\\-us(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/about/about\\-us(?:/)?$"
+    },
+    {
+      "page": "/about/certifications",
+      "regex": "^/about/certifications(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/about/certifications(?:/)?$"
+    },
+    {
+      "page": "/about/organization",
+      "regex": "^/about/organization(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/about/organization(?:/)?$"
+    },
+    {
+      "page": "/about/vision-mission",
+      "regex": "^/about/vision\\-mission(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/about/vision\\-mission(?:/)?$"
+    },
+    {
+      "page": "/api/revalidate",
+      "regex": "^/api/revalidate(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/revalidate(?:/)?$"
+    },
+    {
+      "page": "/business/procurement",
+      "regex": "^/business/procurement(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/business/procurement(?:/)?$"
+    },
+    {
+      "page": "/business/strategic-partners",
+      "regex": "^/business/strategic\\-partners(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/business/strategic\\-partners(?:/)?$"
+    },
+    {
+      "page": "/business/tender",
+      "regex": "^/business/tender(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/business/tender(?:/)?$"
+    },
+    {
+      "page": "/business/tender/verify",
+      "regex": "^/business/tender/verify(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/business/tender/verify(?:/)?$"
+    },
+    {
+      "page": "/career",
+      "regex": "^/career(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/career(?:/)?$"
+    },
+    {
+      "page": "/contact",
+      "regex": "^/contact(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/contact(?:/)?$"
+    },
+    {
+      "page": "/disclaimer",
+      "regex": "^/disclaimer(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/disclaimer(?:/)?$"
+    },
+    {
+      "page": "/favicon.ico",
+      "regex": "^/favicon\\.ico(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/favicon\\.ico(?:/)?$"
+    },
+    {
+      "page": "/maintenance",
+      "regex": "^/maintenance(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/maintenance(?:/)?$"
+    },
+    {
+      "page": "/privacy-policy",
+      "regex": "^/privacy\\-policy(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/privacy\\-policy(?:/)?$"
+    },
+    {
+      "page": "/projects",
+      "regex": "^/projects(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/projects(?:/)?$"
+    },
+    {
+      "page": "/resources/achievement",
+      "regex": "^/resources/achievement(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/resources/achievement(?:/)?$"
+    },
+    {
+      "page": "/resources/download",
+      "regex": "^/resources/download(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/resources/download(?:/)?$"
+    },
+    {
+      "page": "/resources/download/verify",
+      "regex": "^/resources/download/verify(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/resources/download/verify(?:/)?$"
+    },
+    {
+      "page": "/resources/faq",
+      "regex": "^/resources/faq(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/resources/faq(?:/)?$"
+    },
+    {
+      "page": "/resources/gallery",
+      "regex": "^/resources/gallery(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/resources/gallery(?:/)?$"
+    },
+    {
+      "page": "/resources/products",
+      "regex": "^/resources/products(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/resources/products(?:/)?$"
+    },
+    {
+      "page": "/robots.txt",
+      "regex": "^/robots\\.txt(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/robots\\.txt(?:/)?$"
+    },
+    {
+      "page": "/services/consulting",
+      "regex": "^/services/consulting(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/services/consulting(?:/)?$"
+    },
+    {
+      "page": "/services/network-engineering",
+      "regex": "^/services/network\\-engineering(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/services/network\\-engineering(?:/)?$"
+    },
+    {
+      "page": "/services/project-management",
+      "regex": "^/services/project\\-management(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/services/project\\-management(?:/)?$"
+    },
+    {
+      "page": "/services/training",
+      "regex": "^/services/training(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/services/training(?:/)?$"
+    },
+    {
+      "page": "/sitemap",
+      "regex": "^/sitemap(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/sitemap(?:/)?$"
+    },
+    {
+      "page": "/sitemap.xml",
+      "regex": "^/sitemap\\.xml(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/sitemap\\.xml(?:/)?$"
+    },
+    {
+      "page": "/solutions/active-network",
+      "regex": "^/solutions/active\\-network(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/solutions/active\\-network(?:/)?$"
+    },
+    {
+      "page": "/solutions/ict-products",
+      "regex": "^/solutions/ict\\-products(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/solutions/ict\\-products(?:/)?$"
+    },
+    {
+      "page": "/solutions/network-peripherals",
+      "regex": "^/solutions/network\\-peripherals(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/solutions/network\\-peripherals(?:/)?$"
+    },
+    {
+      "page": "/solutions/structured-cabling",
+      "regex": "^/solutions/structured\\-cabling(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/solutions/structured\\-cabling(?:/)?$"
+    },
+    {
+      "page": "/terms-of-service",
+      "regex": "^/terms\\-of\\-service(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/terms\\-of\\-service(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "rsc",
+    "varyHeader": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+    "prefetchHeader": "next-router-prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSegmentHeader": "next-router-segment-prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments",
+    "clientParamParsing": false,
+    "dynamicRSCPrerender": false
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/business/layout,_N_T_/business/tender/layout,_N_T_/business/tender/verify/layout,_N_T_/business/tender/verify/page,_N_T_/business/tender/verify"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/business/tender/verify/__PAGE__",
+    "/business/tender/verify",
+    "/business/tender",
+    "/business",
+    "/_index",
+    "/_head"
+  ]
+}

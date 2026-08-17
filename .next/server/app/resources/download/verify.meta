@@ -1,0 +1,17 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/resources/layout,_N_T_/resources/download/layout,_N_T_/resources/download/verify/layout,_N_T_/resources/download/verify/page,_N_T_/resources/download/verify"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/resources/download/verify/__PAGE__",
+    "/resources/download/verify",
+    "/resources/download",
+    "/resources",
+    "/_index",
+    "/_head"
+  ]
+}

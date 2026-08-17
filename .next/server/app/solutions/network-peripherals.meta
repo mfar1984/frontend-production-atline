@@ -1,0 +1,16 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/solutions/layout,_N_T_/solutions/network-peripherals/layout,_N_T_/solutions/network-peripherals/page,_N_T_/solutions/network-peripherals"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/solutions/network-peripherals/__PAGE__",
+    "/solutions/network-peripherals",
+    "/solutions",
+    "/_index",
+    "/_head"
+  ]
+}

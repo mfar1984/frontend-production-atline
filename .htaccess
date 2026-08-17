@@ -1,7 +1,7 @@
 # DO NOT REMOVE OR MODIFY. CLOUDLINUX PASSENGER CONFIGURATION BEGIN
 PassengerAppRoot "/home2/atlineco/public_html/v4"
 PassengerBaseURI "/"
-PassengerNodejs "/home2/atlineco/nodevenv/public_html/v4/24/bin/node"
+PassengerNodejs "/home2/atlineco/nodevenv/public_html/v4/20/bin/node"
 PassengerAppType node
 PassengerStartupFile server.js
 # DO NOT REMOVE OR MODIFY. CLOUDLINUX PASSENGER CONFIGURATION END
@@ -15,9 +15,19 @@ PassengerStartupFile server.js
 # rules below stop the environment file and the server sources being served as
 # plain text.
 #
-# The PassengerNodejs path above is a guess at what cPanel will generate for an
-# app root of public_html/v4. When you create the Node.js app in cPanel it
-# rewrites this block — keep whatever path it writes rather than this one.
+# The "/20/" is the Node.js version DIRECTORY under ~/nodevenv, named after the
+# version chosen in cPanel's Node.js App page. It is not a version string
+# Passenger interprets — it is a real path that must exist.
+#
+# The backend hit exactly this: the file said 24, cPanel had created 20, and
+# Passenger failed with a missing-interpreter error that never mentioned a
+# version number. Confirmed 20 there; assuming the same here. If cPanel writes a
+# different path when you create the app, KEEP CPANEL'S and tell me.
+#
+# cPanel rewrites this block itself, and deploying this bundle overwrites it. So
+# a `git pull` will abort with "local changes would be overwritten". Resolve it
+# with `git checkout -- .htaccess` first, then pull — NEVER `git clean`, which
+# would delete .env.production.
 
 <FilesMatch "^\.env">
     Require all denied
@@ -25,6 +35,19 @@ PassengerStartupFile server.js
 <FilesMatch "\.(ts|tsx|map)$">
     Require all denied
 </FilesMatch>
+
+# Deployed by cloning the repository into the app root, so .git/ sits here with
+# the complete history. FilesMatch cannot match a directory; RedirectMatch can.
+#
+# This matters MORE here than on the backend. The app root is public_html/v4 —
+# inside the document root — so Apache can serve these files directly the moment
+# Passenger is stopped or misconfigured. Without this rule the whole repository
+# is downloadable.
+RedirectMatch 404 ^/(v4/)?\.git(/|$)
+
+# Same reasoning for the dependency tree and the build manifests: nothing under
+# node_modules should ever be fetched over HTTP.
+RedirectMatch 404 ^/(v4/)?node_modules(/|$)
 
 # runtime-config.js is edited on the server to repoint the API, so it must never
 # be cached long. Everything under /_next/static is content-hashed and safe to

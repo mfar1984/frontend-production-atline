@@ -1,1 +1,0 @@
-(globalThis.TURBOPACK||(globalThis.TURBOPACK=[])).push(["object"==typeof document?document.currentScript:void 0,55354,t=>{"use strict";t.s(["getBackendApiUrl",0,function(){{let t=window.__RUNTIME_CONFIG__?.BACKEND_API_URL;if(t)return t}return"https://sys.atline.com.my"}])}]);

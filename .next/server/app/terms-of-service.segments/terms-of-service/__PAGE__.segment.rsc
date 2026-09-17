@@ -1,6 +1,6 @@
 1:"$Sreact.fragment"
-2:I[12079,["/_next/static/chunks/0x602epe4l2kg.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/187nih7nacww9.js"],"default"]
-3:I[97367,["/_next/static/chunks/0x602epe4l2kg.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+2:I[12079,["/_next/static/chunks/12kg.5~na_3d-.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0yjiwxph._sib.js"],"default"]
+3:I[97367,["/_next/static/chunks/12kg.5~na_3d-.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
 4:"$Sreact.suspense"
-0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{}],[["$","script","script-0",{"src":"/_next/static/chunks/187nih7nacww9.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"HA_86gI5E8LF8gZkIkG_b"}
+0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"address":"UNIT 606, BLOCK C, KELANA SQUARE, NO. 17 JALAN SS 7/26, KELANA JAYA, 47301 PETALING JAYA, SELANGOR, MALAYSIA","phone":"03-78867231"}],[["$","script","script-0",{"src":"/_next/static/chunks/0yjiwxph._sib.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"Be1AHNP5--d6_mpkrFoMQ"}
 5:null

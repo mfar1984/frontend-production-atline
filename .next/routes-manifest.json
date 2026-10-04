@@ -72,6 +72,12 @@
       "namedRegex": "^/api/revalidate(?:/)?$"
     },
     {
+      "page": "/brand-icon",
+      "regex": "^/brand\\-icon(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/brand\\-icon(?:/)?$"
+    },
+    {
       "page": "/business/procurement",
       "regex": "^/business/procurement(?:/)?$",
       "routeKeys": {},
@@ -112,12 +118,6 @@
       "regex": "^/disclaimer(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/disclaimer(?:/)?$"
-    },
-    {
-      "page": "/favicon.ico",
-      "regex": "^/favicon\\.ico(?:/)?$",
-      "routeKeys": {},
-      "namedRegex": "^/favicon\\.ico(?:/)?$"
     },
     {
       "page": "/maintenance",
